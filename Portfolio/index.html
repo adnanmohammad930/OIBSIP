@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnan's Portfolio</title>
+   <!-- In <head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Adnan</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Somewhere in <body> (below your header) -->
+<section class="quote-section">
+  <h1 id="typed-quote"></h1>
+  <p id="typed-author" class="author hidden">— Mohammad Adnan</p>
+</section>
+
+<section id="about" class="about-me-section">
+  <div class="about-me-container">
+    <img src="./views/meh.jpeg" alt="Mohammad Adnan" class="about-me-image">
+    <div class="about-me-text scroll-reveal ">
+      <h1 class="about-me-heading serif   scroll-reveal">About Me</h1>
+      <p>
+        Hey, I’m <strong>Mohammad Adnan</strong> — a full-stack developer in training and currently 
+        in my 3rd year of Computer Science at <em>Galgotias University</em>.
+      </p>
+      <p>
+        I love building websites, learning new tech stuff, and watching football — 
+        which I like to think of as my cardio. My code might not always score goals, 
+        but at least it doesn’t get red cards.
+      </p>
+      <p>
+        I’m still exploring the huge world of development, but every new project 
+        teaches me something cool (and sometimes breaks my brain in the process).  
+        Whether it’s debugging for hours or finally seeing my code work, I enjoy the journey .
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="scroll-reveal">
+  <h1 class="serif section-title">My Work</h1>
+
+  <div class="project-card">
+    <img src="./views/journaling.png" alt="Journaling Website">
+    <div class="project-info">
+      <h2>Journaling Website</h2>
+      <p>A full-stack journaling platform with login, register, and daily entry features. Built using Node.js, Express, PostgreSQL, and sessions.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="./views/todo.png" alt="To-Do List Website">
+    <div class="project-info">
+      <h2>To-Do List</h2>
+      <p>A clean and functional to-do list web app with add, edit, and delete features for efficient task management.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="./views/weather.png" alt="Weather API Website">
+    <div class="project-info">
+      <h2>Weather API Website</h2>
+      <p>Shows real-time weather for any city using an external API. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+
+  <h2 class="section-title yo">Better call Adnan</h2> 
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p><strong>Email:</strong> mohmmadadnan930@gmail.com</p>
+      <p><strong>Location:</strong> Lucknow,India</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/mohammad-adnan-9383142aa/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/adnanmohammad930" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form" action="mailto:yourname@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Ribbon Cursor Canvas -->
+<canvas id="cursor-ribbon"></canvas>
+<!-- At the very end of <body> (order matters) -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="quote.js"></script>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
+
+
+
+
+
